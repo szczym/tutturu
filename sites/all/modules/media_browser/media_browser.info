@@ -1,0 +1,13 @@
+; $Id: media_browser.info,v 1.1 2009/06/01 10:36:11 antoniodemarco Exp $
+name = Media Browser
+description = Provide a media browser style plugin for Views.
+core = 6.x
+package = Views
+dependencies[] = views
+
+; Information added by drupal.org packaging script on 2009-06-09
+version = "6.x-1.0-beta2"
+core = "6.x"
+project = "media_browser"
+datestamp = "1244552514"
+

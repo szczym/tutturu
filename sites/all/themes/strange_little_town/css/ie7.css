@@ -1,0 +1,18 @@
+/* $Id: ie7.css,v 1.1.2.2 2009/02/22 22:31:02 gibbozer Exp $ */
+
+.sidebar #search-block-form input.form-submit {
+  font-size: 0;
+  line-height: 0;
+}
+
+#footer {
+  width: 100%;
+}
+
+.box {
+  overflow: hidden;
+}
+
+#content-inner {
+  overflow: hidden;
+}

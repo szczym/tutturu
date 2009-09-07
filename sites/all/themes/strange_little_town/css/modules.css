@@ -1,0 +1,127 @@
+/* $Id: modules.css,v 1.1.2.7 2009/02/22 14:15:54 gibbozer Exp $ */
+
+/* Aggregator */
+.feed-item-title a {
+  color: #fbd6fc;
+}
+
+/* Comment */
+#comments {
+  clear: both;
+  margin-bottom: 20px;
+  color: #625;
+  overflow: auto;
+}
+
+.comment {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: transparent url(../images/contentbg.png) 0 0 repeat;
+}
+
+.comment-info {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px dotted #fff;
+}
+
+.comment .content {
+  clear: both;
+}
+
+.comment ul.links li {
+  padding: 0 1em 0 0;
+}
+
+.indented {
+  margin-left: 0;
+  padding-left: 15px; /* LTR */
+  background: transparent url(../images/contentbg.png) 0 0 repeat;
+  overflow: auto;
+}
+
+.box {
+  margin-top: 40px;
+}
+
+.new {
+  color: #e27;
+}
+
+.user-signature {
+  clear: both;
+  padding-top: 0.25em;
+  border-top: 1px dotted #fff;
+}
+
+#comments .node-author {
+  border: 5px solid #fde;
+}
+
+/* OpenID */
+#user-login-form li.openid-link,
+#user-login li.openid-link,
+#user-login-form li.user-link {
+  background-image: none;
+  text-align: center;
+}
+
+#edit-openid-identifier {
+  background: transparent url(../images/contentbg.png) 0 0 repeat;
+  padding-left: 0;
+}
+
+/* System & Admin */
+/* admin.css */
+#main-content .item-list .pager {
+  display: block;
+  clear: both;
+  text-align: left; /* LTR */
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #2e1737;
+}
+
+#main-content .item-list .pager li {
+  margin: 0 8px 0 0;
+  padding: 0;
+}
+
+#main-content .item-list .pager li a {
+  color: #fff;
+}
+
+/* Search box */
+.sidebar #search-block-form label {
+  position: absolute;
+  height: 0;
+  visibility: hidden;
+}
+
+.sidebar #search-block-form input.form-text {
+  width: 135px;
+  background: transparent url(../images/contentbg.png) 0 0 repeat;
+  border: 0 none;
+}
+
+.sidebar #search-block-form input.form-submit {
+  width: 16px;
+  height: 16px;
+  background: transparent url(../images/search.png) 100% 50% no-repeat; /* LTR */
+  border: 0 none;
+  text-indent: -9999em;
+  margin: 0 0 0 7px; /* LTR */
+  cursor: pointer;
+}
+
+/* Tagadelic */
+.block-tagadelic .content {
+  line-height: 1.7em;
+  text-align: justify;
+}
+
+/* Add more space for submit button */
+#main-content input.form-submit {
+  margin: 10px 0;
+}

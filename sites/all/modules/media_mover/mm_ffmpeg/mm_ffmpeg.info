@@ -1,0 +1,13 @@
+; $Id$
+name = FFmpeg Media Mover module
+description = Runs FFmpeg for the Media Mover modules
+package = "Media Mover"
+dependencies[] = media_mover_api 
+dependencies[] = ffmpeg_wrapper
+core=6.x
+; Information added by drupal.org packaging script on 2009-07-19
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "media_mover"
+datestamp = "1247962605"
+

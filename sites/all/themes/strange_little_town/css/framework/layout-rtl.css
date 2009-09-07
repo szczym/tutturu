@@ -1,0 +1,9 @@
+/* $Id: layout-rtl.css,v 1.1.2.1 2009/02/17 19:11:11 gibbozer Exp $ */
+
+/**
+ * Footer
+ */
+#to-top {
+  float: left; /* LTR */
+  padding: 0 1em 1em 0; /* LTR */
+}

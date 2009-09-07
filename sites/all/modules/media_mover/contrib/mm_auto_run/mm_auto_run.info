@@ -1,0 +1,12 @@
+; $Id: mm_auto_run.info,v 1.1.2.1.2.2 2008/10/02 23:34:41 arthuregg Exp $
+name = Media Mover Auto Run
+description = Auto run specific Media Mover configurations when a node is updated or inserted
+package = "Media Mover"
+dependencies[] = media_mover_api 
+core = 6.x
+; Information added by drupal.org packaging script on 2009-07-19
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "media_mover"
+datestamp = "1247962605"
+

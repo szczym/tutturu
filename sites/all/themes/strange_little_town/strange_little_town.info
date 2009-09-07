@@ -1,0 +1,41 @@
+; $Id: strange_little_town.info,v 1.1.2.5 2009/02/22 13:20:02 gibbozer Exp $
+name = Strange Little Town
+description = A lovely whimsical WordPress theme from <a href="http://magical.nu/2008/12/wp-theme-strange-little-house/">magical.nu</a>
+version = VERSION
+core = 6.x
+engine = phptemplate
+
+screenshot = images/screenshot.png
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content_top] = Top Content
+regions[content_bottom] = Bottom Content
+
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = node_user_picture
+features[] = comment_user_picture
+
+; stylesheet for all media
+stylesheets[all][] = css/framework/reset.css
+stylesheets[all][] = css/framework/baseline.css
+stylesheets[all][] = css/framework/typography.css
+stylesheets[all][] = css/framework/layout.css
+
+stylesheets[all][] = css/modules.css
+stylesheets[all][] = css/system-menus.css
+stylesheets[all][] = css/strange-little-town.css
+
+; Add a stylesheet for print media
+;stylesheets[print][] = css/print.css
+; Information added by drupal.org packaging script on 2009-02-22
+version = "6.x-1.0-beta1"
+core = "6.x"
+project = "strange_little_town"
+datestamp = "1235343371"
+

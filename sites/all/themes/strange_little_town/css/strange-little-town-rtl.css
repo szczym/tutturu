@@ -1,0 +1,64 @@
+/* $Id: strange-little-town-rtl.css,v 1.1.2.6 2009/02/22 19:36:22 gibbozer Exp $ */
+
+/**
+ * Primary menu
+ */
+#primary-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#primary-menu ul.primary-menu {
+  float: right;
+  border-left:0 none;
+  border-right: #c3adae dotted 1px;
+}
+
+#primary-menu ul.primary-menu li {
+  float: right;
+  border-right: 0 none;
+  border-left: #c3adae dotted 1px;
+}
+
+a.feed-icon {
+  position: absolute;
+  right: 91%;
+  top: 25px;
+  padding-right: 0;
+  padding-left: 20px;
+  background: url(../images/rss.gif) 0 50% no-repeat;
+  text-align: right;
+}
+
+.submitted {
+  float: right;
+}
+.commments-count {
+  float: left;
+}
+.picture {
+  float: left;
+}
+.picture a img {
+  float: left;
+  margin: 0  0.5em 0.5em 0;
+}
+
+/* main-content blocks */
+.content-block h2.block-title {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.content-block .block .content {
+  margin-left: 0;
+  margin-right: 120px;
+}
+
+/* comments */
+.indented {
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 15px;
+}

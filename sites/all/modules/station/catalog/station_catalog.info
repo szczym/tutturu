@@ -1,0 +1,12 @@
+; $Id: station_catalog.info,v 1.6 2008/11/27 06:48:17 drewish Exp $
+name = Station Catalog
+description = Module to track albums in a radio station's library. 
+package = Station
+core = 6.x
+dependencies[] = views
+; Information added by drupal.org packaging script on 2009-05-31
+version = "6.x-2.0-unstable3"
+core = "6.x"
+project = "station"
+datestamp = "1243811455"
+

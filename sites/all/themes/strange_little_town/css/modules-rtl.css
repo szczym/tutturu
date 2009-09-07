@@ -1,0 +1,12 @@
+/* $Id: modules-rtl.css,v 1.1.2.2 2009/02/22 14:15:54 gibbozer Exp $ */
+
+/* System & Admin */
+/* admin.css */
+#main-content .item-list .pager {
+  text-align: right;
+}
+
+.sidebar #search-block-form input.form-submit {
+  background: transparent url(../images/search-rtl.png) 0 50% no-repeat;
+  margin: 0 7px 0 0;
+}

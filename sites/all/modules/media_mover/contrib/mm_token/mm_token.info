@@ -1,0 +1,15 @@
+;$Id$
+name = Media Mover API Token
+description = Token implementation for Media Mover
+package = "Media Mover"
+core= 6.x
+dependencies[] = token
+dependencies[] = media_mover_api
+
+
+; Information added by drupal.org packaging script on 2009-07-19
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "media_mover"
+datestamp = "1247962605"
+
