@@ -28,12 +28,15 @@ function tutturu_profile_modules() {
     // Core Drupal, typically enabled by default:
   	'color', 'comment', 'help', 'menu', 'taxonomy', 'dblog', 
     // Core Drupal, required by our modules:
-    'trigger', 'upload',
+    'trigger', 'upload', 'path',
     // Our modules:
     'admin_menu', 'backup_migrate', 'content', 'content_copy', 'ffmpeg_wrapper', 
     'fieldgroup', 'filefield', 'filefield_meta', 'imagefield', 'media_mover_api', 
     'mm_auto_run', 'mm_cck', 'mm_ffmpeg',  'mm_node', 'mm_views', 'views', 
     'views_export', 'views_ui',  'admin_menu_toolbar', 'features', 'video_transcode',
+    'filefield_paths', 'nodereference', 'text', 'optionwidgets', 'media_mover_ftp', 'mm_token', 
+    'mm_dir', 'auto_nodetitle', 'custom_pagers', 'getid3', 'pathauto', 'token',
+    'transliteration', 'swftools', 'swfobject2', 'wijering',
   );
 }
 
