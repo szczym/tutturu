@@ -329,7 +329,8 @@ function mm_cck_harvest($configuration, $nid) {
             OR (n.nid IS NOT NULL AND n.nid = m.nid AND f.filepath <> m.harvest_file))
             AND n.type = "%s" 
             '. $file_type_conditions .'
-          ORDER BY f.timestamp', $configuration['cid'], $configuration['mm_cck_havest_node_type']);
+          AND f.filepath NOT IN (select harvest_file from {media_mover_files} where cid =%d)
+          ORDER BY f.timestamp', $configuration['cid'], $configuration['mm_cck_havest_node_type'], $configuration['cid']);
 
         // now build the out going file data
         while ($result = db_fetch_array($results)) {
@@ -432,6 +433,7 @@ function mm_cck_node_save($configuration, &$file) {
   // find a local file or fail.
   if ($local_file = mm_cck_find_local_file($file)) {
     // we need to add an new file to the node
+    //watchdog('Media Mover CCK Debug', 'Inside', null, WATCHDOG_DEBUG);
     switch ($field['type']) {
       case 'text':
         $node->{$field['field_name']} = array(array('value' => $local_file));
@@ -493,20 +495,23 @@ function mm_cck_field_filefield(&$node, $field, $filepath, $configuration) {
   else { $validators = filefield_widget_upload_validators($field);}
 
   // now get the new field
+   //watchdog('Media Mover CCK', 'Filepath'.$filepath,null, WATCHDOG_DEBUG);
   if (! $new_file = field_file_save_file($filepath, $validators, $destination_path)) {
     watchdog('MM Content', 'Could not save file', null, WATCHDOG_ERROR);
     return;
   }
-
+//watchdog('Media Mover CCK', 'After file save',null, WATCHDOG_DEBUG);
   // we need to alter the file object slightly so it will display correctly
   $new_file['data'] = array('description' => '');
   // do we list the file?
   $new_file['list'] = $configuration['field_save_list'];
 
   // add the file on to the node
-  $node->{$field['field_name']}[] = $new_file;
+  $node->{$field['field_name']}[0] = $new_file;
   // save the node
+  //print("<pre>");print_r($node);print("<pre>");
   node_save($node);
+  //watchdog('Media Mover CCK', 'After node save',null, WATCHDOG_DEBUG);
   // clear the cache
   cache_clear_all('content:'. $node->nid .':'. $node->vid, 'cache_content');
   return $new_file;
